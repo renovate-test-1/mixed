@@ -3,7 +3,7 @@ jobs:
   lint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4                                                # unpinned
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd                                                # v6                                                # unpinned
       - uses: actions/setup-python@v5                                            # unpinned
   test:
     runs-on: ubuntu-latest
@@ -13,4 +13,4 @@ jobs:
   release:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683         # v4.2.2 - correct, should be left alone
+      - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd         # v6.0.2 - correct, should be left alone
